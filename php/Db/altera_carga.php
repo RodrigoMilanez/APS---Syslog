@@ -9,13 +9,11 @@
 	<body>
 		<?php
 			$id = $_POST['id'];
-            $produto = $_POST['produto'];
-            $id_motorista = $_POST['id_motorista'];
-            $destino = $_POST['destino'];
+            $localidade = $_POST['localidade'];
             $status_ = $_POST['status_'];
 			
 			
-			$sql = "UPDATE carga SET produto = '{$produto}', id_motorista = '{$id_motorista}', destino = '{$destino}', status_ = '{$status_}' WHERE id = {$id}";
+			$sql = "UPDATE carga SET localidade = '{$localidade}', status_ = '{$status_}' WHERE id = {$id}";
 			$query = mysqli_query($conexao, $sql);
 		
 			if($query) {

@@ -1,5 +1,9 @@
 <?php
 	include('conexao.php');
+	include('ler_session.php');
+    if ($_SESSION['usuario']['permissao']>3){
+        header('Location: main.php');
+    }
 ?>
 <!DOCTYPE html>
 <html>

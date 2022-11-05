@@ -25,6 +25,9 @@
                     <th>Produto</th>
                     <th>Destino</th>
 					<th>Status <br>C-concluído,<br> A-Ativo</th>
+					<th>Localidade atual</th>
+					<th></th>
+					<th></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -36,6 +39,7 @@
                     <td><?php echo $item['produto']; ?></td>
                     <td><?php echo $item['destino']; ?></td>
 					<td><?php echo $item['status_']; ?></td>
+					<td><?php echo $item['localidade']; ?></td>
                     <td><a href="Db/excluir_carga.php?id=<?php echo $item['id']?>">Excluir Ordem</a></td>
 					<td><a href="alterar_carga.php?id=<?php echo $item['id']?>">Alterar Ordem</a></td>
 					</tr>
